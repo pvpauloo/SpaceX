@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7e2a2e7-bb6d-4ae0-afdc-f1cf55367062" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YBiom5otEFc2dB3A8dJISU5cOj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../PycharmProjects/Project_Kivy" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.play">
+    <configuration name="Primeiroteste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SpaceX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Primeiroteste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="play" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SpaceX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/play.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.play" />
+        <item itemvalue="Python.Primeiroteste" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7e2a2e7-bb6d-4ae0-afdc-f1cf55367062" name="Default Changelist" comment="" />
+      <created>1582422565570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582422565570</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582422701770">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1582422701770" />
+    <state width="735" height="466" key="DebuggerActiveHint" timestamp="1582607948786">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="735" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1582607948785" />
+    <state x="507" y="212" key="FileChooserDialogImpl" timestamp="1582422835186">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="507" y="212" key="FileChooserDialogImpl/0.0.1440.900@0.0.1440.900" timestamp="1582422835186" />
+    <state width="1419" height="303" key="GridCell.Tab.0.bottom" timestamp="1582889528183">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="152" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582771626183" />
+    <state width="1419" height="303" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1582889528183" />
+    <state width="1419" height="152" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1582807319374" />
+    <state width="1419" height="303" key="GridCell.Tab.0.center" timestamp="1582889528175">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="152" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582771626180" />
+    <state width="1419" height="303" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1582889528175" />
+    <state width="1419" height="152" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1582807319373" />
+    <state width="1419" height="303" key="GridCell.Tab.0.left" timestamp="1582889528141">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="152" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582771626176" />
+    <state width="1419" height="303" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1582889528141" />
+    <state width="1419" height="152" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1582807319372" />
+    <state width="1419" height="303" key="GridCell.Tab.0.right" timestamp="1582889528179">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="152" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582771626181" />
+    <state width="1419" height="303" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1582889528179" />
+    <state width="1419" height="152" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1582807319374" />
+    <state width="1419" height="303" key="GridCell.Tab.1.bottom" timestamp="1582889528200">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582639369360" />
+    <state width="1419" height="303" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1582889528200" />
+    <state width="1419" height="303" key="GridCell.Tab.1.center" timestamp="1582889528198">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582639369358" />
+    <state width="1419" height="303" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1582889528198" />
+    <state width="1419" height="303" key="GridCell.Tab.1.left" timestamp="1582889528197">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582639369357" />
+    <state width="1419" height="303" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1582889528197" />
+    <state width="1419" height="303" key="GridCell.Tab.1.right" timestamp="1582889528198">
+      <screen x="0" y="23" width="1440" height="812" />
+    </state>
+    <state width="1419" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582639369359" />
+    <state width="1419" height="303" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1582889528198" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1582583141373">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582583141373" />
+    <state x="176" y="149" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1582582921715">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="176" y="149" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1440.900@0.0.1440.900" timestamp="1582582921715" />
+  </component>
+</project>

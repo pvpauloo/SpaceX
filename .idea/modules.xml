@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../PycharmProjects/Project_Kivy/.idea/Project_Kivy.iml" filepath="$PROJECT_DIR$/../../PycharmProjects/Project_Kivy/.idea/Project_Kivy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpaceX.iml" filepath="$PROJECT_DIR$/.idea/SpaceX.iml" />
+    </modules>
+  </component>
+</project>
