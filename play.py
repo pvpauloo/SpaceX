@@ -36,27 +36,20 @@ class TelaInicial(Screen):
         cap.append(caminho_arquivo.decode('utf-8'))
         self.interageNaTela(f'Arquivos processados, abaixo os desfazimentos')
         pc = ModuloProcessamento.Geral('self', False, cap)
-        self.ids.area_resultado.add_widget(
-            Button(text='Data', size_hint_y=None, font_size=15, height=15))
-        self.ids.area_resultado.add_widget(
-            Button(text='MTI', size_hint_y=None, font_size=15, height=15))
-        self.ids.area_resultado.add_widget(
-            Button(text='Card Number', size_hint_y=None, font_size=15, height=15))
-        self.ids.area_resultado.add_widget(
-            Button(text='Terminal Code', size_hint_y=None, font_size=15, height=15))
-        self.ids.area_resultado.add_widget(
-            Button(text='Response Code', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='Data', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='MTI', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='Card Number', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='Processing Code', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='Terminal Code', size_hint_y=None, font_size=15, height=15))
+        self.ids.area_resultado.add_widget(Button(text='Response Code', size_hint_y=None, font_size=15, height=15))
         for item in pc:
             if item['MTI'].__contains__('0420'):
                 self.ids.area_resultado.add_widget(Label(text=item['Data'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-                self.ids.area_resultado.add_widget(
-                    Label(text=item['MTI'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-                self.ids.area_resultado.add_widget(
-                    Label(text=item['Card Number'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-                self.ids.area_resultado.add_widget(
-                    Label(text=item['Terminal Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-                self.ids.area_resultado.add_widget(
-                    Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(Label(text=item['MTI'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(Label(text=item['Card Number'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(Label(text=item['Processing Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(Label(text=item['Terminal Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
 
 
 sm = ScreenManager()
