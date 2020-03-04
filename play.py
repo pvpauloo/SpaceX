@@ -47,15 +47,16 @@ class TelaInicial(Screen):
         self.ids.area_resultado.add_widget(
             Button(text='Response Code', size_hint_y=None, font_size=15, height=15))
         for item in pc:
-            self.ids.area_resultado.add_widget(Label(text=item['Data'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-            self.ids.area_resultado.add_widget(
-                Label(text=item['MTI'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-            self.ids.area_resultado.add_widget(
-                Label(text=item['Card Number'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-            self.ids.area_resultado.add_widget(
-                Label(text=item['Terminal Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
-            self.ids.area_resultado.add_widget(
-                Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+            if item['MTI'].__contains__('0420'):
+                self.ids.area_resultado.add_widget(Label(text=item['Data'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(
+                    Label(text=item['MTI'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(
+                    Label(text=item['Card Number'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(
+                    Label(text=item['Terminal Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
+                self.ids.area_resultado.add_widget(
+                    Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
 
 
 sm = ScreenManager()
