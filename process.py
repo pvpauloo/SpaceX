@@ -211,4 +211,4 @@ class ModuloProcessamento:
             worksheet[f'N{i}'] = conjunto['ORIGINAL TERMINAL']
             worksheet[f'O{i}'] = conjunto['ORIGINAL TIMESTAMP']
             nomearqui = conjunto["Transmission Date Time"]
-        workbook.save(f'Resultados/Q2_Processado-{nomearqui}.xlsx')
+        workbook.save(f'Q2_Processado-{nomearqui}.xlsx')
