@@ -34,8 +34,8 @@ class TelaInicial(Screen):
         super().__init__()
         print('O arquivo foi anexado')
         cap.append(caminho_arquivo.decode('utf-8'))
-        self.interageNaTela(f'Os Arquivos {cap} foram processados com sucesso!')
-        pc = ModuloProcessamento.Geral('self', True, cap)
+        self.interageNaTela(f'Arquivos processados, abaixo os desfazimentos')
+        pc = ModuloProcessamento.Geral('self', False, cap)
         self.ids.area_resultado.add_widget(
             Button(text='Data', size_hint_y=None, font_size=15, height=15))
         self.ids.area_resultado.add_widget(
