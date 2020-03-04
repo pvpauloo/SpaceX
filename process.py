@@ -21,12 +21,9 @@ class ModuloProcessamento:
                         linha = arquivo.readline()
                         linha = arquivo.readline()
                         linha = arquivo.readline()
-                        if linha.__contains__('<field id="0" value="0420"/>') \
-                                or linha.__contains__('<field id="0" value="0110"/>') \
-                                or linha.__contains__('<field id="0" value="0400"/>') \
-                                or linha.__contains__('<field id="0" value="0120"/>') \
-                                or linha.__contains__('<field id="0" value="0400"/>') \
-                                or linha.__contains__('<field id="0" value="0100"/>'):
+                        if linha.__contains__('<field id="0" value="0420"/>') or linha.__contains__(
+                                '<field id="0" value="0100"/>') or linha.__contains__(
+                                '<field id="0" value="0400"/>') or linha.__contains__('<field id="0" value="0110"/>'):
                             field0 = re.findall(r'\d+', linha.strip(" "))
                             field2 = re.search('\d+______\d+', arquivo.readline().strip(" "))
                             if field2.group().__contains__('______'):
@@ -81,52 +78,90 @@ class ModuloProcessamento:
                                         linha = arquivo.readline().strip(" ")
                                         if linha.__contains__('<field id="39" value="'):
                                             field39 = re.findall(r'\d+', linha)
-                                    while not linha.__contains__('<isomsg id="90">'):
-                                        if len(linha) != 0:
-                                            linha = arquivo.readline().strip(" ")
-                                            if linha.__contains__('<isomsg id="90">'):
-                                                arquivo.readline()
-                                                field90_1 = re.findall(r'\d+', arquivo.readline().strip(" "))
-                                                field90_2 = re.findall(r'\d+', arquivo.readline().strip(" "))
-                                                field90_3 = re.findall(r'\d+', arquivo.readline().strip(" "))
-                                                if log:
-                                                    dicionario.clear()
-                                                    dicionario['Data'] = log.group()
-                                                    dicionario['MTI'] = field0[1]
-                                                    dicionario['Card Number'] = field2[0]
-                                                    dicionario['Processing Code'] = field3[1]
-                                                    dicionario['Amount Transaction'] = field4[1]
-                                                    dicionario['Amount Settlement'] = field5[1]
-                                                    dicionario['Amount Billing'] = field6[1]
-                                                    dicionario['Transmission Date Time'] = field7[1]
-                                                    dicionario['Conversion, settlement'] = field9[1]
-                                                    dicionario['Conversion rate, billing'] = field10[1]
-                                                    dicionario['Terminal Code'] = field11[1]
-                                                    dicionario['Response Code'] = field39[1]
-                                                    dicionario['ORIGINAL MTI'] = field90_1[1]
-                                                    dicionario['ORIGINAL TERMINAL'] = field90_2[1]
-                                                    dicionario['ORIGINAL TIMESTAMP'] = field90_3[1]
-                                                    conjunto.append(dicionario.copy())
-                                                else:
-                                                    dicionario.clear()
-                                                    dicionario['Data'] = log
-                                                    dicionario['MTI'] = field0[1]
-                                                    dicionario['Card Number'] = field2[0]
-                                                    dicionario['Processing Code'] = field3[1]
-                                                    dicionario['Amount Transaction'] = field4[1]
-                                                    dicionario['Amount Settlement'] = field5[1]
-                                                    dicionario['Amount Billing'] = field6[1]
-                                                    dicionario['Transmission Date Time'] = field7[1]
-                                                    dicionario['Conversion, settlement'] = field9[1]
-                                                    dicionario['Conversion rate, billing'] = field10[1]
-                                                    dicionario['Terminal Code'] = field11[1]
-                                                    dicionario['Response Code'] = field39[1]
-                                                    dicionario['ORIGINAL MTI'] = field90_1[1]
-                                                    dicionario['ORIGINAL TERMINAL'] = field90_2[1]
-                                                    dicionario['ORIGINAL TIMESTAMP'] = field90_3[1]
-                                                    conjunto.append(dicionario.copy())
+                                    if not field0.__contains__('0110'):
+                                        while not linha.__contains__('<isomsg id="90">'):
+                                            if len(linha) != 0:
+                                                linha = arquivo.readline().strip(" ")
+                                                if linha.__contains__('<isomsg id="90">'):
+                                                    arquivo.readline()
+                                                    field90_1 = re.findall(r'\d+', arquivo.readline().strip(" "))
+                                                    field90_2 = re.findall(r'\d+', arquivo.readline().strip(" "))
+                                                    field90_3 = re.findall(r'\d+', arquivo.readline().strip(" "))
+                                                    if log:
+                                                        dicionario.clear()
+                                                        dicionario['Data'] = log.group()
+                                                        dicionario['MTI'] = field0[1]
+                                                        dicionario['Card Number'] = field2[0]
+                                                        dicionario['Processing Code'] = field3[1]
+                                                        dicionario['Amount Transaction'] = field4[1]
+                                                        dicionario['Amount Settlement'] = field5[1]
+                                                        dicionario['Amount Billing'] = field6[1]
+                                                        dicionario['Transmission Date Time'] = field7[1]
+                                                        dicionario['Conversion, settlement'] = field9[1]
+                                                        dicionario['Conversion rate, billing'] = field10[1]
+                                                        dicionario['Terminal Code'] = field11[1]
+                                                        dicionario['Response Code'] = field39[1]
+                                                        dicionario['ORIGINAL MTI'] = field90_1[1]
+                                                        dicionario['ORIGINAL TERMINAL'] = field90_2[1]
+                                                        dicionario['ORIGINAL TIMESTAMP'] = field90_3[1]
+                                                        conjunto.append(dicionario.copy())
+                                                    else:
+                                                        dicionario.clear()
+                                                        dicionario['Data'] = log
+                                                        dicionario['MTI'] = field0[1]
+                                                        dicionario['Card Number'] = field2[0]
+                                                        dicionario['Processing Code'] = field3[1]
+                                                        dicionario['Amount Transaction'] = field4[1]
+                                                        dicionario['Amount Settlement'] = field5[1]
+                                                        dicionario['Amount Billing'] = field6[1]
+                                                        dicionario['Transmission Date Time'] = field7[1]
+                                                        dicionario['Conversion, settlement'] = field9[1]
+                                                        dicionario['Conversion rate, billing'] = field10[1]
+                                                        dicionario['Terminal Code'] = field11[1]
+                                                        dicionario['Response Code'] = field39[1]
+                                                        dicionario['ORIGINAL MTI'] = field90_1[1]
+                                                        dicionario['ORIGINAL TERMINAL'] = field90_2[1]
+                                                        dicionario['ORIGINAL TIMESTAMP'] = field90_3[1]
+                                                        conjunto.append(dicionario.copy())
+                                            else:
+                                                linha = '<isomsg id="90">'
+                                    else:
+                                        if log:
+                                            dicionario.clear()
+                                            dicionario['Data'] = log.group()
+                                            dicionario['MTI'] = field0[1]
+                                            dicionario['Card Number'] = field2[0]
+                                            dicionario['Processing Code'] = field3[1]
+                                            dicionario['Amount Transaction'] = field4[1]
+                                            dicionario['Amount Settlement'] = field5[1]
+                                            dicionario['Amount Billing'] = field6[1]
+                                            dicionario['Transmission Date Time'] = field7[1]
+                                            dicionario['Conversion, settlement'] = field9[1]
+                                            dicionario['Conversion rate, billing'] = field10[1]
+                                            dicionario['Terminal Code'] = field11[1]
+                                            dicionario['Response Code'] = field39[1]
+                                            dicionario['ORIGINAL MTI'] = ''
+                                            dicionario['ORIGINAL TERMINAL'] = ''
+                                            dicionario['ORIGINAL TIMESTAMP'] = ''
+                                            conjunto.append(dicionario.copy())
                                         else:
-                                            linha = '<isomsg id="90">'
+                                            dicionario.clear()
+                                            dicionario['Data'] = log
+                                            dicionario['MTI'] = field0[1]
+                                            dicionario['Card Number'] = field2[0]
+                                            dicionario['Processing Code'] = field3[1]
+                                            dicionario['Amount Transaction'] = field4[1]
+                                            dicionario['Amount Settlement'] = field5[1]
+                                            dicionario['Amount Billing'] = field6[1]
+                                            dicionario['Transmission Date Time'] = field7[1]
+                                            dicionario['Conversion, settlement'] = field9[1]
+                                            dicionario['Conversion rate, billing'] = field10[1]
+                                            dicionario['Terminal Code'] = field11[1]
+                                            dicionario['Response Code'] = field39[1]
+                                            dicionario['ORIGINAL MTI'] = ''
+                                            dicionario['ORIGINAL TERMINAL'] = ''
+                                            dicionario['ORIGINAL TIMESTAMP'] = ''
+                                            conjunto.append(dicionario.copy())
 
                 if len(linha) == 0:
                     v = False
