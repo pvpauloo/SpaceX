@@ -35,7 +35,7 @@ class TelaInicial(Screen):
         print('O arquivo foi anexado')
         cap.append(caminho_arquivo.decode('utf-8'))
         self.interageNaTela(f'Arquivos processados, abaixo os desfazimentos')
-        pc = ModuloProcessamento.Geral('self', False, cap)
+        pc = ModuloProcessamento.Geral('self', True, cap)
         self.ids.area_resultado.add_widget(Button(text='Data', size_hint_y=None, font_size=15, height=15))
         self.ids.area_resultado.add_widget(Button(text='MTI', size_hint_y=None, font_size=15, height=15))
         self.ids.area_resultado.add_widget(Button(text='Card Number', size_hint_y=None, font_size=15, height=15))

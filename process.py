@@ -1,6 +1,7 @@
 import re
 import openpyxl
 from datetime import date
+import os
 
 
 class ModuloProcessamento:
@@ -212,3 +213,4 @@ class ModuloProcessamento:
             worksheet[f'O{i}'] = conjunto['ORIGINAL TIMESTAMP']
             nomearqui = conjunto["Transmission Date Time"]
         workbook.save(f'Q2_Processado-{nomearqui}.xlsx')
+        os.startfile(f'Q2_Processado-{nomearqui}.xlsx')
