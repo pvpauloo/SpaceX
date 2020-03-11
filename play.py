@@ -1,8 +1,8 @@
-from process import ModuloProcessamento
+import process
 from kivy.app import App
 from kivy.lang.builder import Builder
 from kivy.core.window import Window
-from kivy.uix.screenmanager import ScreenManager, Screen, NoTransition, SlideTransition
+from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 
@@ -22,20 +22,11 @@ class TelaInicial(Screen):
         label = self.ids.mensagem
         label.text = texto
 
-    def mudar_tela(self, nome_tela, tipo_transicao='Slide', direcao='left'):
-        if (tipo_transicao == 'Slide'):
-            self.manager.transition = SlideTransition()
-        else:
-            self.manager.transition = NoTransition()
-        self.manager.transition.direction = direcao
-        self.manager.current = nome_tela
-
     def soltou(self, window, caminho_arquivo):
-        super().__init__()
-        print('O arquivo foi anexado')
         cap.append(caminho_arquivo.decode('utf-8'))
         self.interageNaTela(f'Arquivos processados, abaixo os desfazimentos')
-        pc = ModuloProcessamento.Geral('self', True, cap)
+        pc = process.ModuloProcessamento.geral(self, cap)
+        process.ModuloProcessamento.newexcel(self, pc)
         self.ids.area_resultado.add_widget(Button(text='Data', size_hint_y=None, font_size=15, height=15))
         self.ids.area_resultado.add_widget(Button(text='MTI', size_hint_y=None, font_size=15, height=15))
         self.ids.area_resultado.add_widget(Button(text='Card Number', size_hint_y=None, font_size=15, height=15))
@@ -52,8 +43,10 @@ class TelaInicial(Screen):
                 self.ids.area_resultado.add_widget(Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
 
 
+
 sm = ScreenManager()
-sm.add_widget(TelaInicial(name='tela_inicial'))
+tela = TelaInicial(name='tela_inicial')
+sm.add_widget(tela)
 
 
 class Programa(App):
@@ -64,4 +57,6 @@ class Programa(App):
 
 
 if __name__ == '__main__':
-    Programa().run()
+    start = Programa()
+    start.run()
+

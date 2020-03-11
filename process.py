@@ -1,12 +1,12 @@
 import re
 import openpyxl
-from datetime import date
+import datetime
 import os
 
 
-class ModuloProcessamento:
+class ModuloProcessamento():
 
-    def Geral(self, opc, arquivos):
+    def geral(self, arquivos):
         dicionario = dict()
         conjunto = []
         field39 = ''
@@ -167,14 +167,10 @@ class ModuloProcessamento:
                 if len(linha) == 0:
                     v = False
                     arquivo.close()
-
-        if opc:
-            ModuloProcessamento.NewExcel('self', conjunto)
-
         return conjunto
 
-    def NewExcel(self, conjunto):
-        data = date.today()
+    def newexcel(self, arq):
+        data = datetime.date.today()
         workbook = openpyxl.Workbook()
         worksheet = workbook.active
         worksheet.title = 'TRANSACOES'
@@ -194,7 +190,7 @@ class ModuloProcessamento:
         worksheet['N1'] = 'ORIGINAL TERMINAL'
         worksheet['O1'] = 'ORIGINAL TIMESTAMP'
 
-        for i, conjunto in enumerate(conjunto):
+        for i, conjunto in enumerate(arq):
             i += 2
             worksheet[f'A{i}'] = conjunto['Data']
             worksheet[f'B{i}'] = conjunto['MTI']
@@ -213,4 +209,5 @@ class ModuloProcessamento:
             worksheet[f'O{i}'] = conjunto['ORIGINAL TIMESTAMP']
             nomearqui = conjunto["Transmission Date Time"]
         workbook.save(f'Q2_Processado-{nomearqui}.xlsx')
-        os.startfile(f'Q2_Processado-{nomearqui}.xlsx')
+        abrir = os
+        abrir.startfile(f'Q2_Processado-{nomearqui}.xlsx')
