@@ -16,7 +16,7 @@ class ModuloProcessamento():
             while v:
                 linha = arquivo.readline()
                 if linha.__contains__('<'):
-                    if linha.__contains__('<log realm="mastercard-channel/'):
+                    if linha.__contains__('<log realm='):
                         log = re.search('\d+\-\d+\-\d+T\d+:\d+:\d+\.\d+', linha)
                         linha = arquivo.readline()
                         linha = arquivo.readline()

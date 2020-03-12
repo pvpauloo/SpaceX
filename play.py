@@ -43,7 +43,6 @@ class TelaInicial(Screen):
                 self.ids.area_resultado.add_widget(Label(text=item['Response Code'], color=(.47, .47, .47, 1), size_hint_y=None, font_size=15, height=15))
 
 
-
 sm = ScreenManager()
 tela = TelaInicial(name='tela_inicial')
 sm.add_widget(tela)
